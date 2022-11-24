@@ -15,6 +15,7 @@ export const Play: React.FC<PlayProps> = ({
     <>
         <button className='home-button' onClick={() => ChangePage(0)}>go home</button>
         <h1> Play🎵</h1>
+        <h1 className='sub-header'> Please choose recording to play </h1>
     </>
     );
 }

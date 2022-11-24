@@ -19,7 +19,7 @@
   /* background-image: linear-gradient(45deg, blue, orange); */
 }
 
-.app-header {
+.sub-header {
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -29,8 +29,6 @@
   color: white;
 
 }
-
-
 
 .App-logo {
   height: 40vmin;
@@ -70,7 +68,7 @@
 
 button {
   display: inline-block;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px 10px 20px;
   background: #e26c3d;
   border-radius: 10px;
   border-color: #4d5eb3;
@@ -87,6 +85,14 @@ button:hover {
   background: #a1401a;
 }
 
+.recordButton {
+  background: #4d5eb3;
+}
+
+.recordButton:hover {
+  background: #394685;
+}
+
 h1 {
   color: white;
   font-size: 12em;
@@ -97,4 +103,13 @@ h1 {
   float: left;
   margin-top: 20px;
   margin-left: 30px;
+}
+
+.RecordAudio {
+  float: center;
+  text-align: center;
+  text-align: center;
+  padding: 10px 24px;
+  display: flex;  
+  justify-content: center;
 }

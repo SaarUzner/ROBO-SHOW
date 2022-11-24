@@ -1,31 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
 import '../../App.css';
-import { AudioRecorder } from 'react-audio-voice-recorder';
 
 
-export interface AudioRecProps {
+export interface RecordProps {
     ChangePage: (newPage: number) => void;
 }
 
-export const AudioRec: React.FC<AudioRecProps> = ({
+export const Record: React.FC<RecordProps> = ({
     ChangePage
 }) => {
-
-    function addAudioElement(blob: Blob) {
-        const url = URL.createObjectURL(blob);
-        const audio = document.createElement("audio");
-        audio.src = url;
-        audio.controls = true;
-        document.body.appendChild(audio);
-      }
-
     return (
     <>
         <button className='home-button' onClick={() => ChangePage(0)}>go home</button>
         <h1> Record🎤</h1>
         <div className="RecApp">
-            <AudioRecorder onRecordingComplete={addAudioElement} />
+            <button className='recordButton' onClick={() => ChangePage(2.1)}> Audio🎺</button>
+            <button className='recordButton'onClick={() => ChangePage(0)}> Eyes👀</button>
+            <button className='recordButton'onClick={() => ChangePage(0)}> Mouth👄</button>
+            <button className='recordButton'onClick={() => ChangePage(0)}> Eyebrows🥸 </button>
         </div>
 
     </>

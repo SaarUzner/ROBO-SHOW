@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { AudioRec } from './Record/Record';
+import { Record } from './Record/Record';
+import { RecordAudio } from './Record/RecordAudio';
 import { Play } from './Play/Play';
 import { Home } from './Home/Home';
 import { Edit } from './Edit/Edit';
@@ -16,15 +17,18 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
 }) => {
     switch (page) {
         case 0:
-            return <Home ChangePage = {ChangePage}/>            
+            return <Home ChangePage={ChangePage} />
         case 1:
-            return <Play ChangePage = {ChangePage}/>
+            return <Play ChangePage={ChangePage} />
         case 2:
-            return <AudioRec ChangePage = {ChangePage} />
+            return <Record ChangePage={ChangePage} />
+        case 2.1:
+            return <RecordAudio ChangePage={ChangePage} />
         case 3:
-            return <Edit ChangePage = {ChangePage} />
+            return <Edit ChangePage={ChangePage} />
         default:
             return null;
+
 
     }
 }
