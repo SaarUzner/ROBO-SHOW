@@ -1,6 +1,36 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  font-family: 'Righteous', serif;
   text-align: center;
+  height: auto;
+  background: rgb(184, 206, 160);
 }
+
+
+.App {
+  width: 100%;
+  height: auto;
+  /* background-image: linear-gradient(45deg, blue, orange); */
+}
+
+.app-header {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -32,7 +62,39 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background: #e26c3d;
+  border-radius: 10px;
+  border-color: #4d5eb3;
+  color: #eee;
+  font-size: 180%;
+  margin: 0px 5px 0px 5px;
+  position: center;
+  width: 200px;
+  height: 100px;
+  text-shadow: .03em .03em 0 #4d5eb3;
+}
+
+button:hover {
+  background: #a1401a;
+}
+
+h1 {
+  color: white;
+  font-size: 12em;
+  text-shadow: .03em .03em 0 #4d5eb3;
+}
+
+.home-button {
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
 }

@@ -1,0 +1,1 @@
+export const pages = ['Choose', 'Rec', 'Play', 'Edit'];
